@@ -1,0 +1,193 @@
+.theme-toggle-btn {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+  min-width: 120px;
+  height: 40px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+
+  .toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+  }
+
+  .toggle-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    i {
+      color: white;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .toggle-text {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  &.dark {
+    .toggle-circle {
+      background: #1e40af;
+      transform: translateX(0);
+
+      i {
+        transform: rotate(35deg);
+      }
+    }
+  }
+
+  &.light {
+    .toggle-circle {
+      background: #f59e0b;
+      transform: translateX(0);
+
+      i {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  // Hover effects
+  &:hover {
+    .toggle-circle {
+      transform: scale(1.1);
+    }
+  }
+
+  // Animation
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .toggle-wrapper {
+    animation: slideIn 0.3s ease;
+  }
+}
+
+// Alternative style with switch appearance
+.theme-toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+  }
+
+  &.dark::before {
+    transform: translateX(30px);
+    background: #1e40af;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .theme-toggle-btn {
+    min-width: 100px;
+    height: 36px;
+
+    .toggle-circle {
+      width: 20px;
+      height: 20px;
+
+      i {
+        font-size: 0.8rem;
+      }
+    }
+
+    .toggle-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// Add this to your existing ThemeToggle.scss
+.theme-toggle-circular {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    i {
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &:hover {
+    transform: rotate(15deg);
+    background: var(--primary-color);
+
+    i {
+      color: white;
+    }
+  }
+
+  &.dark {
+    i {
+      transform: rotate(35deg);
+    }
+  }
+} 

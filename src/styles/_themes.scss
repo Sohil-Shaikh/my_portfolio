@@ -1,0 +1,28 @@
+:root {
+  // Light theme (default)
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --heading-color: #1f2937;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #0a0a0a;    // Very dark background
+  --bg-secondary: #171717;   // Slightly lighter dark background
+  --text-primary: #e5e7eb;   // Light text
+  --text-secondary: #9ca3af; // Slightly dimmed text
+  --primary-color: #3b82f6;  // Bright blue
+  --secondary-color: #60a5fa; // Lighter blue
+  --border-color: #374151;   // Dark border
+  --card-bg: #1f2937;        // Card background
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --nav-bg: rgba(10, 10, 10, 0.8);
+  --heading-color: #f3f4f6;
+} 
