@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.scss';
-import profileImg from "../assets/profile.png"
+import aboutImage from '../assets/about.jpeg';
 
 const About = () => {
   useEffect(() => {
@@ -31,7 +31,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text-container" data-aos="fade-right">
             <div className="profile-image">
-              <img src="/src/assets/about.jpeg" alt="Profile" />
+              <img src={aboutImage} alt="About" />
               <div className="image-overlay"></div>
             </div>
             <div className="about-text">

@@ -1,12 +1,15 @@
 import { motion } from 'framer-motion';
 import '../styles/Projects.scss';
+import chatAppImg from '/public/chatApp.png';
+import studentImg from '/public/studentms.png';
+import EcommerceImg from '/public/ecommerce.png';
 
 
 const placeholderImages = {
-  ecommerce: "public/ecommerce.png",
-  studentmanager: "public/studentms.png",
+  ecommerce: EcommerceImg,
+  studentmanager: studentImg,
   dashboard: "https://via.placeholder.com/600x400?text=Social+Dashboard",
-  chatApp: "public/chatapp.png"
+  chatApp: chatAppImg,
 };
 
 const Projects = () => {
