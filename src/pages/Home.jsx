@@ -6,6 +6,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import profileImg from "../assets/profile.png";
 
 const Home = () => {
   return (
@@ -59,7 +60,7 @@ const Home = () => {
 
         <div className="content-right">
           <div className="hero-image">
-            <img className='profile-img' src="/src/assets/profile.png" alt="Sohil Shaikh" />
+            <img className='profile-img' src={profileImg} alt="Sohil Shaikh" />
             <div className="background-shape"></div>
           </div>
         </div>
