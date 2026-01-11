@@ -14,6 +14,21 @@ const Resume = () => {
     ],
     experience: [
       {
+        title: "Python Developer",
+        company: "EPPS Infotech Ltd",
+        period: "Aug 2025 - Present",
+        location: "Pune, Maharashtra, India",
+        responsibilities: [
+          "Developed and maintained backend applications using Python and FastAPI",
+          "Designed and implemented RESTful APIs for scalable and high-performance systems",
+          "Worked with SQLAlchemy for database modeling, ORM operations, and query optimization",
+          "Implemented business logic, authentication, and data validation for APIs",
+          "Integrated third-party APIs and handled asynchronous request processing",
+          "Collaborated with frontend and QA teams to ensure seamless API integration",
+          "Debugged, optimized, and enhanced existing backend functionalities"
+        ]
+      },
+      {
         title: "Frontend Development Intern",
         company: "Robowaves",
         period: "2024 - 2025",
@@ -34,7 +49,7 @@ const Resume = () => {
         location: "Buldhana, Maharashtra",
         details: [
           "Graduated with First Class Honors",
-          "CGPA : 8.2/10",
+          // "CGPA : 8.2/10",
           "Led student web development club",
         ]
       },
@@ -50,23 +65,23 @@ const Resume = () => {
         ]
       }
     ],
-    skills: {
-      technical: [
-        { name: "Python", level: 95 },
-        { name: "Django", level: 90 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "React.js", level: 90 },
-        { name: "SQL", level: 95 },
-      ],
-      soft: [
-        "Leadership",
-        "Problem Solving",
-        "Communication",
-        "Team Management",
-        "Agile Methodology"
-      ]
-    }
+    // skills: {
+    //   technical: [
+    //     { name: "Python", level: 95 },
+    //     { name: "Django", level: 90 },
+    //     { name: "HTML/CSS", level: 90 },
+    //     { name: "JavaScript", level: 85 },
+    //     { name: "React.js", level: 90 },
+    //     { name: "SQL", level: 95 },
+    //   ],
+    //   soft: [
+    //     "Leadership",
+    //     "Problem Solving",
+    //     "Communication",
+    //     "Team Management",
+    //     "Agile Methodology"
+    //   ]
+    // }
   };
 
   return (
@@ -78,7 +93,7 @@ const Resume = () => {
     >
       <div className="resume-container">
         <div className="resume-header">
-          <h2>My Resume</h2>
+          <h2>Experiense & Education</h2>
           <div className="resume-actions">
             <a
               href="/your-resume.pdf"
@@ -106,13 +121,13 @@ const Resume = () => {
             <i className="fas fa-graduation-cap"></i>
             Education
           </button>
-          <button
+          {/* <button
             className={`tab-btn ${activeTab === 'skills' ? 'active' : ''}`}
             onClick={() => setActiveTab('skills')}
           >
             <i className="fas fa-code"></i>
             Skills
-          </button>
+          </button> */}
         </div>
 
         <div className="resume-content">
@@ -178,7 +193,7 @@ const Resume = () => {
             </motion.div>
           )}
 
-          {activeTab === 'skills' && (
+          {/* {activeTab === 'skills' && (
             <motion.div
               className="skills-section"
               initial={{ opacity: 0, y: 20 }}
@@ -225,7 +240,7 @@ const Resume = () => {
                 </div>
               </div>
             </motion.div>
-          )}
+          )} */}
         </div>
       </div>
     </motion.div>
