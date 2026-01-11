@@ -96,7 +96,7 @@ const Resume = () => {
           <h2>Experiense & Education</h2>
           <div className="resume-actions">
             <a
-              href="/your-resume.pdf"
+              href="/sohil_resume.pdf"
               download
               className="download-btn"
             >
