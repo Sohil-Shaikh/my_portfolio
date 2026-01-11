@@ -30,7 +30,7 @@ const Home = () => {
           <p>Crafting digital experiences through elegant code and creative solutions</p>
 
           <div className="cta-buttons">
-            <a href="/contact" className="btn primary">Get in Touch</a>
+            <a href="#contact" className="btn primary">Get in Touch</a>
             {/* <a href="/projects" className="btn secondary">View Projects</a> */}
           </div>
 
