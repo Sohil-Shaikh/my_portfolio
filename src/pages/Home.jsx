@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import "../styles/Home.scss";
+import About from "./About"; 
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
+    <div>
     <motion.div
       className="home"
       initial={{ opacity: 0 }}
@@ -46,8 +51,8 @@ const Home = () => {
             <a href="https://www.linkedin.com/in/sohil-shaikh-977736254/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} />
+            <a href="https://instagram.com/sohilshaikh_143" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
         </div>
@@ -58,8 +63,16 @@ const Home = () => {
             <div className="background-shape"></div>
           </div>
         </div>
+        
       </div>
     </motion.div>
+      
+      <section id="about"><About /></section>
+      <section id="skills"><Skills /></section>
+      <section id="projects"><Projects /></section>
+      <section id="contact"><Contact /></section>
+    </div>
+
   );
 };
 

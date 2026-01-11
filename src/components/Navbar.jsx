@@ -25,7 +25,7 @@ const Navbar = () => {
           <span className={`hamburger ${isOpen ? 'active' : ''}`}></span>
         </button>
 
-        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        {/* <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li>
             <Link 
               to="/" 
@@ -36,8 +36,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            
             <Link 
-              to="/about"
+              to="about"
               className={location.pathname === '/about' ? 'active' : ''}
               onClick={() => setIsOpen(false)}
             >
@@ -79,9 +80,16 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
+
+        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li className="theme-toggle-item">
-            <button 
+            <button
               className="theme-toggle-btn"
               onClick={toggleTheme}
               aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
@@ -91,7 +99,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </header >
   );
 };
 

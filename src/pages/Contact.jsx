@@ -11,7 +11,8 @@ import {
 import { 
   faLinkedin, 
   faGithub, 
-  faTwitter 
+  faTwitter ,
+  faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
@@ -99,8 +100,8 @@ const Contact = () => {
                 <a href="https://github.com/Sohil-Shaikh" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} className="icon" />
                 </a>
-                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faTwitter} className="icon" />
+                <a href="https://instagram.com/sohilshaikh_143" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faInstagram} className="icon" />
                 </a>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import '../styles/Projects.scss';
 
+
 const placeholderImages = {
   ecommerce: "public/ecommerce.png",
   studentmanager: "public/studentms.png",

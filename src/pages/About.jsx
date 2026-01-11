@@ -31,7 +31,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text-container" data-aos="fade-right">
             <div className="profile-image">
-              <img src='' alt="Profile" />
+              <img src="/src/assets/about.jpeg" alt="Profile" />
               <div className="image-overlay"></div>
             </div>
             <div className="about-text">
@@ -48,7 +48,7 @@ const About = () => {
                 web development. I love learning new technologies and solving complex 
                 problems through clean and efficient code.
               </p>
-              <div className="interests">
+              {/* <div className="interests">
                 <h4>My Interests</h4>
                 <ul>
                   <li>Web Development</li>
@@ -69,7 +69,7 @@ const About = () => {
                   <span>AWS</span>
                   <span>Django</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
