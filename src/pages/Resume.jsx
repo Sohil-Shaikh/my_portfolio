@@ -93,7 +93,7 @@ const Resume = () => {
     >
       <div className="resume-container">
         <div className="resume-header">
-          <h2>Experiense & Education</h2>
+          <h2>Experience & Education</h2>
           <div className="resume-actions">
             <a
               href="/sohil_resume.pdf"

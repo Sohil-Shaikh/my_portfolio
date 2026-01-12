@@ -23,9 +23,9 @@ const Skills = () => {
       category: "Backend",
       items: [
         { name: "Python", level: 95 },
-        { name: "Node.js", level: 85 },
+        { name: "FastAPI", level: 95 },
         { name: "Django", level: 90 },
-        { name: "SQL", level: 75 }
+        { name: "SQL", level: 90 }
       ]
     },
     {
@@ -34,7 +34,7 @@ const Skills = () => {
         { name: "Git", level: 90 },
         { name: "VS Code", level: 80 },
         { name: "AWS", level: 70 },
-        { name: "API", level: 85 }
+        { name: "API", level: 90 }
       ]
     }
   ];
