@@ -10,31 +10,32 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    {
-      category: "Frontend",
-      items: [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "Redux", level: 85 }
-      ]
-    },
+  
     {
       category: "Backend",
       items: [
-        { name: "Python", level: 95 },
-        { name: "FastAPI", level: 95 },
-        { name: "Django", level: 90 },
-        { name: "SQL", level: 90 }
+        { name: "Python", level: 100 },
+        { name: "FastAPI", level: 100 },
+        { name: "Django", level: 100 },
+        { name: "SQL", level: 100 }
+      ]
+    },
+    {
+      category: "Frontend",
+      items: [
+        { name: "React", level: 100 },
+        { name: "JavaScript", level: 100 },
+        { name: "HTML/CSS", level: 100 },
+        { name: "Redux", level: 100 }
       ]
     },
     {
       category: "Tools & Others",
       items: [
-        { name: "Git", level: 90 },
-        { name: "VS Code", level: 80 },
-        { name: "AWS", level: 70 },
-        { name: "API", level: 90 }
+        { name: "Git", level: 100 },
+        { name: "VS Code", level: 100 },
+        { name: "AWS", level: 100 },
+        { name: "API", level: 100 }
       ]
     }
   ];
@@ -71,7 +72,7 @@ const Skills = () => {
                   <div className="skill-item" key={skillIndex}>
                     <div className="skill-info">
                       <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percentage">{skill.level}%</span>
+                      {/* <span className="skill-percentage">{skill.level}%</span> */}
                     </div>
                     <div className="progress-bar">
                       <motion.div 

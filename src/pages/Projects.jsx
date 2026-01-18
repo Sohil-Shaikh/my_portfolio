@@ -15,6 +15,15 @@ const placeholderImages = {
 const Projects = () => {
   const projects = [
     {
+      title: "AI Chatbot Application",
+      description: "Real-time chat application with AI-powered features like generate the text and images.",
+      image: placeholderImages.chatApp,
+      technologies: ["React", "CSS", "OpenAI", "AI",],
+      github: "https://github.com/Sohil-Shaikh/AI-Chatbot-Application.git",
+      live: "https://chat-app-demo.com",
+      category: "Web App / AI"
+    },
+    {
       title: "E-Commerce Platform",
       description: "An e-commerce platform with features like user authentication, shopping cart, payment integration, and admin dashboard. Built with React.js, Tailwind CSS, API.",
       image: placeholderImages.ecommerce,
@@ -60,15 +69,7 @@ const Projects = () => {
     //   live: "https://chat-app-demo.com",
     //   category: "AI/ML"
     // }
-    {
-      title: "AI Chatbot Application",
-      description: "Real-time chat application with AI-powered features like generate the text and images.",
-      image: placeholderImages.chatApp,
-      technologies: ["React", "CSS", "OpenAI", "AI",],
-      github: "https://github.com/Sohil-Shaikh/AI-Chatbot-Application.git",
-      live: "https://chat-app-demo.com",
-      category: "Web App / AI"
-    }
+    
   ];
 
   return (
