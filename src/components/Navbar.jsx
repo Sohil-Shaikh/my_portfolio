@@ -83,16 +83,19 @@ const Navbar = () => {
           </li> */}
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/" onClick={() => setIsOpen(false)}>Home</a></li>
+          <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+          <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
+          <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+          <li><a href="#resume" onClick={() => setIsOpen(false)}>Education</a></li>
+          <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           <li className="theme-toggle-item">
             <button
               className="theme-toggle-btn"
-              onClick={toggleTheme}
+              onClick={() => {
+                toggleTheme();
+                setIsOpen(false);
+              }}
               aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
               <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
