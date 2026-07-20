@@ -80,7 +80,7 @@ const Contact = () => {
                   <FontAwesomeIcon icon={faPhone} className="icon" />
                   <div>
                     <h4>Call Me</h4>
-                    <a href="tel:+917887786319">+91 7887786319</a>
+                    <a href="tel:+91**********">+91 **********</a>
                   </div>
                 </div>
 
